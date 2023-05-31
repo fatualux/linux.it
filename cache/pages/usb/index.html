@@ -1,0 +1,32 @@
+
+<h1 class="mb-3">{{ page.title }}</h1>
+
+<p> Pressoché ogni moderna <a href="/glossario#distribuzione">distribuzione Linux</a> prevede una modalità <b>"live"</b>, ovvero la possibilità di eseguire l'intero sistema operativo senza doverlo installare. In tale contesto non è possibile salvare le configurazioni al sistema stesso (che ad ogni avvio parte sempre nello stato originale), ma si possono comunque leggere e scrivere i files ospitati sul disco rigido, connettersi ad una rete ed accedere a servizi online, o più semplicemente provare empiricamente Linux prima di <a href="/installare">installarlo permanentemente sul proprio computer</a>.</p>
+<p> È possibile utilizzare tale modalità o masterizzando su CD o DVD un file .ISO scaricato dal sito di una qualunque distribuzione, oppure riversare tale file su una <b>chiavetta USB</b>. Quest'ultima opzione è particolarmente consigliata per una serie di motivi:</p>
+
+<img class="float-right img-fluid" src="unetbootin.jpg">
+
+<ul>
+    <li>non costringe a masterizzare un CD o un DVD, ma si può temporaneamente utilizzare una chiavetta salvo poi poterla riformattare successivamente</li>
+    <li>è una scelta obbligata per i sempre più diffusi portatili sprovvisti di lettori ottici</li>
+    <li>una chiavetta USB è molto più veloce di un DVD, dunque il caricamento del sistema operativo è altrettanto veloce</li>
+    <li>una chiavetta USB è più duratura e comoda da portare in giro, per avere sempre con sé un sistema operativo completo avviabile in pochi secondi</li>
+</ul>
+
+<p><strong>Dato il file .ISO scaricato, però, non è sufficiente copiarlo sulla chiavetta USB per rendere il sistema avviabile</strong>: è necessario utilizzare una applicazione che spacchetti tale file e predisponga una serie di configurazioni sulla chiavetta stessa.</p>
+<p>Esistono numerosi programmi di tal fatta, per tutti i sistemi operativi. Per tutti è sufficiente inserire la chiavetta USB nel PC, aprire il file .ISO che è stato scaricato e pigiare l'apposito pulsante. Tra i più popolari citiamo:</p>
+
+<ul>
+    <li><a rel="nofollow" href="https://www.balena.io/etcher/">Etcher</a>, disponibile per Windows, macOS e Linux</li>
+    <li><a rel="nofollow" href="https://www.linuxliveusb.com/">Linux Live USB Creator</a>, disponibile per Windows</li>
+    <li><a rel="nofollow" href="https://rufus.akeo.ie/?locale=it_IT">Rufus</a>, disponibile per Windows</li>
+    <li><a rel="nofollow" href="http://unetbootin.github.io/">UNetbootin</a>, disponibile per Windows, macOS e Linux</li>
+    <li><a rel="nofollow" href="http://sevenbits.github.io/Mac-Linux-USB-Loader/">Mac Linux USB Loader</a>, disponibile per macOS (indicato per creare chiavette USB avviabili sui computer Apple)</li>
+</ul>
+
+<img class="float-left img-fluid" src="boot_menu.png">
+
+<p>Una volta creata la propria chavetta USB avviabile, si può riavviare il computer lasciandola inserita nella porta. La parte più complicata arriva a questo punto: occorre indicare al proprio PC di avviarsi da USB anziché dal disco rigido (come fa abitualmente).</p>
+<p>Alcuni modelli rilevano automaticamente la presenza della chiavetta e spontaneamente permettono di selezionarla, in altri è necessario premere un tasto della tastiere nelle primissime fasi di accensione (quando viene mostrato il logo del produttore oppure, sui computer più vecchi, la schermata nera del BIOS). Tale tasto cambia da modello a modello: tra i più comuni ci sono ESC ed F12, spesso viene indicato nella suddetta, rapida schermata iniziale di avvio accanto alla dicitura "Boot Menu". Questa informazione può eventualmente essere reperita cercando su internet marca e modello del proprio computer.</p>
+
+<a class="cta-button mt-5" href="/installare">E ora, installa Linux sul tuo PC</a>

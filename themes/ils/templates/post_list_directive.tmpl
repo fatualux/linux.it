@@ -1,0 +1,28 @@
+{#  -*- coding: utf-8 -*- #}
+{% block content %}
+<!-- Begin post-list {{ post_list_id }} -->
+<div class="row home_news">
+    {% if posts %}
+        {% for post in posts %}
+        <div class="col-lg-3 col-md-6">
+            <article>
+                <a href="{{ post.permalink(lang) }}">
+                    {% if post.previewimage and post.previewimage != '/images/default-social.png' %}
+                        <div class="news_title mb-3" style="background-image: url('{{ post.previewimage }}')">
+                            <h2 class="post-title">{{ post.title(lang)|e }}</h2>
+                        </div>
+                    {% else %}
+                        <h2 class="post-title">{{ post.title(lang)|e }}</h2>
+                    {% endif %}
+                </a>
+
+                <div class="content">
+                    {{ post.text(teaser_only=True, show_read_more_link=False) }}
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>
+<!-- End post-list {{ post_list_id }} -->
+{% endblock %}

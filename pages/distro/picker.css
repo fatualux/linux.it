@@ -1,0 +1,45 @@
+#quiz span {
+    margin-left: 10px;
+}
+
+#quiz h2 {
+	font-size: 20px;
+}
+
+#quiz ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#quiz ul li {
+	list-style: none;
+}
+
+#distros {
+	margin-top: 50px;
+	width: 100%;
+}
+
+#distros img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+#distros td {
+    padding-top: 30px;
+	text-align: center;
+}
+
+.answer {
+    width: 10%;
+}
+
+.positive {
+	background-color: #0B0;
+    color: #000;
+}
+
+.negative {
+	background-color: #B00;
+    color: #FFF;
+}

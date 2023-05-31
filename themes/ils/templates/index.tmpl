@@ -1,0 +1,61 @@
+{#  -*- coding: utf-8 -*- #}
+{% import 'comments_helper.tmpl' as comments with context %}
+{% import 'pagination_helper.tmpl' as pagination with context %}
+{% import 'feeds_translations_helper.tmpl' as feeds_translations with context %}
+{% import 'sidebar.tmpl' as sidebar with context %}
+{% extends 'base.tmpl' %}
+
+{% block extra_head %}
+    {{ super() }}
+    {% if posts and (permalink == '/' or permalink == '/' + index_file) %}
+        <link rel="prefetch" href="{{ posts[0].permalink() }}" type="text/html">
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+{% block content_header %}
+    {{ feeds_translations.translation_link(kind) }}
+{% endblock %}
+{% if 'main_index' in pagekind %}
+    {{ front_index_header }}
+{% endif %}
+
+<div class="col-12">
+        <h1 class="mb-3">Archivio News</h1>
+</div>
+<div class="col-md-9 mb-5">
+{% for post in posts %}
+        <article class="h-entry post-{{ post.meta('type') }}" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <header>
+                {% if post.previewimage and post.previewimage != '/images/default-social.png' %}
+                        <div class="news_title mb-3" style="background-image: url('{{ post.previewimage }}')">
+                            <h2 class="post-title">{{ post.title(lang)|e }}</h2>
+                        </div>
+                {% else %}
+                    <h1 class="p-name entry-title"><a href="{{ post.permalink() }}" class="u-url">{{ post.title()|e }}</a></h1>
+                {% endif %}
+            <div class="metadata">
+                <p class="dateline">
+                <a href="{{ post.permalink() }}" rel="bookmark">
+                <time class="published dt-published" datetime="{{ post.formatted_date('short') }}" itemprop="datePublished" title="{{ post.formatted_date(date_format)|e }}">{{ post.formatted_date(date_format)|e }}</time>
+                </a>
+                </p>
+            </div>
+        </header>
+        {% if index_teasers %}
+        <div class="p-summary entry-summary">
+        {{ post.text(teaser_only=True, show_read_more_link=False) }}
+        {% else %}
+        <div class="e-content entry-content">
+        {{ post.text(teaser_only=False) }}
+        {% endif %}
+        </div>
+        </article>
+{% endfor %}
+{% if page_links %}
+     {{ pagination.page_navigation(current_page, page_links, prevlink, nextlink, prev_next_links_reversed) }}
+{% endif %}
+</div>
+{{ sidebar.content() }}
+{{ comments.comment_link_script() }}
+{% endblock %} 

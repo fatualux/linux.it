@@ -1,0 +1,12 @@
+{% if posts %}
+<div class="card mb-5">
+    <div class="card-header">
+        Articoli più recenti
+    </div>
+    <div class="card-body">
+        {% for post in posts[:4] %}
+            <a href="{{ post.permalink(lang) }}">{{ post.title(lang)|e }}</a><br><br>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

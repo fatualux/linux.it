@@ -1,0 +1,5 @@
+{% for sponsor in theme_config.get('sponsors') %}
+    <div class="col-3 text-center">
+        <a target="_blank" rel="nofollow" href="{{ sponsor.url }}"><img class="img-fluid" alt="{{ sponsor.label }}" src="{{ sponsor.image }}" border="0" loading="lazy" /></a>
+    </div>
+{% endfor %}

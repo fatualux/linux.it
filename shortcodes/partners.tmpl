@@ -1,0 +1,5 @@
+{% for partner in theme_config.get('partners') %}
+    <div class="col-4 text-center">
+        <a target="_blank" href="{{ partner.reference }}"><img class="img-fluid" alt="{{ partner.label }}" src="{{ partner.image }}" border="0" loading="lazy" /></a>
+    </div>
+{% endfor %}

@@ -1,0 +1,9 @@
+{% for localsection in theme_config.get('localsections') %}
+    {% if type == 'div' %}
+    <div class="col-4 mb-3">
+        <a href="/sezionilocali/{{ localsection.city }}" class="btn btn-light btn-block localsection-button">{{ localsection.label }}</a>
+    </div>
+    {% else %}
+        <li><a href="/sezionilocali/{{ localsection.city }}">{{ localsection.label }}</a></li>
+    {% endif %}
+{% endfor %}

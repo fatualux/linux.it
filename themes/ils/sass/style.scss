@@ -1,0 +1,163 @@
+
+.page-contents {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+blockquote {
+    margin: 0 0 1rem 1rem;
+    font-style: italic;
+}
+
+.news_title {
+    width: 100%;
+    padding-bottom: 20%;
+    height: 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    .post-title {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 4px;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+.localsection-button {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_news {
+    .news_title {
+        padding-bottom: 150%;
+    }
+}
+
+.post_page {
+    .news_title {
+        padding-bottom: 50%;
+        background-blend-mode: normal;
+    }
+}
+
+article {
+    time {
+        display: block;
+        margin-bottom: 20px;
+        opacity: .8;
+    }
+}
+
+.btn-primary {
+    background-color: #ffa200;
+    border-color: #ffa200;
+
+    &:hover {
+        color: #000;
+        background-color: #FFF;
+        border-color: #000;
+    }
+}
+
+.cta-button {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0 0 5px #444;
+        background-color: #FFF;
+        border-color: #FFF;
+    }
+}
+
+.ils-services-grid {
+    .card-footer {
+        padding: 0;
+        background-color: #FFF;
+    }
+}
+
+.pagination {
+    a {
+        text-decoration: none;
+        color: #ffa200;
+    }
+
+    li.active {
+        a {
+            background-color: #000 !important;
+            border-color: #000 !important;
+        }
+    }
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+    /* Without min-height map is not displayed on mobile */
+    min-height: 600px;
+}
+
+#ils_footer {
+    a {
+        text-decoration: none;
+    }
+
+    a.btn:hover {
+        color: #333;
+
+        path {
+            fill: #333;
+        }
+    }
+
+    .col-md-3 {
+        padding: 5px;
+
+        .cell {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 10px;
+        }
+    }
+}
+
+/**
+ * Bigger link content (most useful in mobile)
+ */
+.navbar-nav .nav-link {
+    padding:0.4em 0.8em;
+}
+
+/**
+ * Smaller link container (most useful in mobile)
+ */
+.menu a:hover {
+    width: max-content;
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .news_title {
+        padding-bottom: 50%;
+    }
+
+    .post_page {
+        .news_title {
+            padding-bottom: 100%;
+        }
+    }
+
+}

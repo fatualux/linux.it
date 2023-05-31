@@ -1,0 +1,94 @@
+{
+	"questions": [
+		{
+			"question": "Quanto ne sai di computer?",
+			"answers": [
+				"Non molto...",
+				"So arrangiarmi la maggior parte delle volte",
+				"Sono uno smanettone incallito!"
+			]
+		},
+		{
+			"question": "Hai già esperienza con Linux?",
+			"answers": [
+				"Mai visto neanche da lontano",
+				"Ho qualche amico che lo usa",
+				"Si, lo uso regolarmente"
+			]
+		},
+		{
+			"question": "Quale tra queste è la tua priorità?",
+			"answers": [
+				"Semplicità d'uso",
+				"Applicazioni sempre aggiornate all'ultima versione",
+				"Massimo controllo del sistema"
+			]
+		},
+		{
+			"question": "Quanti anni ha il PC su cui vorresti installare Linux?",
+			"answers": [
+				"Meno di due",
+				"Da due a cinque",
+				"Più di cinque"
+			]
+		}
+	],
+
+	"distributions": [
+		{
+			"name": "Mint",
+			"website": "http://www.linuxmint.com/",
+			"logo": "mint.png",
+			"answers": [0, 0, 0, 0]
+		},
+		{
+			"name": "Elementary",
+			"website": "https://elementary.io/",
+			"logo": "elementary.png",
+			"answers": [0, 0, 0, 1]
+		},
+		{
+			"name": "Lubuntu",
+			"website": "http://lubuntu.net/",
+			"logo": "lubuntu.png",
+			"answers": [0, 0, 0, 2]
+		},
+		{
+			"name": "Ubuntu",
+			"website": "http://www.ubuntu-it.org/",
+			"logo": "ubuntu.png",
+			"answers": [0, 1, 0, 0]
+		},
+		{
+			"name": "Fedora",
+			"website": "https://getfedora.org/it/",
+			"logo": "fedora.png",
+			"answers": [0, 1, 1, 0]
+		},
+		{
+			"name": "Mageia",
+			"website": "http://www.mageia.org/it/",
+			"logo": "mageia.png",
+			"answers": [1, 1, 0, 0]
+		},
+		{
+			"name": "openSUSE",
+			"website": "https://it.opensuse.org/",
+			"logo": "opensuse.png",
+			"answers": [1, 2, 1, 0]
+		},
+		{
+			"name": "Debian",
+			"website": "https://www.debian.org/index.it.html",
+			"logo": "debian.png",
+			"answers": [2, 2, 2, 1]
+		},
+		{
+			"name": "Arch",
+			"website": "http://www.archlinux.it/",
+			"logo": "arch.png",
+			"answers": [2, 2, 1, 0]
+		}
+	]
+}
+

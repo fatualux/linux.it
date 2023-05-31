@@ -1,0 +1,55 @@
+
+<h1 class="mb-3">{{ page.title }}</h1>
+
+<p>Il modello di sviluppo opensource oramai domina buona parte del mondo software e, oltre alle ben note applicazioni che tutti usiamo, non di rado capita di imbattersi in piccoli ma utili progetti, intesi a risolvere una qualche esigenza specifica di una nicchia specifica, pubblicati da parte di qualcuno che vuole condividere il suo lavoro con altri. Eppure altrettanto spesso vediamo che vengono compiuti piccoli grandi errori di carattere operativo e metodologico, motivati forse da un troppo precipitoso entusiasmo nella pubblicazione del codice e dalla scarsa dimestichezza col modello stesso, che limitano il potenziale benefico di tali opere.</p>
+<img src="opensource.jpeg" alt="Logo OpenSource" class="float-right hidden-sm hidden-xs">
+<p>Tantissimi sono i progetti che si autodefiniscono “opensource”, quando poi sul sito si trova un archivio compresso con il codice sorgente e nulla più. Ma “opensource” non è solo “pubblicare il codice”, bensì svilupparlo e farlo crescere insieme. Per trasparenza e condivisione, ma soprattuto per il bene stesso del progetto: più è facile per una nuova persona avvicinarsi al suo sviluppo e più è facile coinvolgere sviluppatori che possano dare una mano, anche solo con un piccolo contributo occasionale.</p>
+<p>Rinunciare ad adottare alcuni accorgimenti ed un metodo davvero “opensource” vuol dire non trarre nessun beneficio dalla propria scelta di aprire ad altri il codice, ma accollarsi tutti gli oneri. Questa è, purtroppo, una delle principali cause di estinzione di buona parte dei progetti in circolazione.</p>
+<p>Questa pagina si rivolge a coloro che vogliono pubblicare un proprio nuovo software, o già lo hanno fatto ma senza badare molto alla forma, o che sviluppano e mantengono una applicazione freeware e vorrebbero renderla opensource, e vogliono non solo aprire il proprio lavoro ad altri ma giovare loro stessi degli impliciti benefici dell’opensource.</p>
+
+<h2>Strumenti e Opportunità</h2>
+
+<p>Ci sono numerosi strumenti che possono essere allestiti a contorno di un progetto di sviluppo software, per rendere più comodi ed efficaci i processi di pianificazione, sviluppo, testing, manutenzione e miglioramento del codice, e fortunatamente su Internet esistono numerosi servizi che li integrano affinché possano essere rapidamente ed efficacemente adottati.</p>
+<p>Tra questi, citiamo:</p>
+<ul>
+    <li class="clearfix">
+		<img src="sourceforge.png" alt="Logo SourceForge" class="float-right" style="width: 50px"><a rel="nofollow" href="https://sourceforge.net/">SourceForge</a>: fino a qualche anno fa era il più noto e popolare, anche se opinabili scelte nella gestione del sito hanno fatto fuggire parte del suo pubblico. Risente soprattutto della mancanza di strumenti di collaborazione più immediati, adottati da altri;
+	</li>
+	<li class="clearfix">
+		<img src="github.png" alt="Logo GitHub" class="float-right" style="width: 50px"><a rel="nofollow" href="https://github.com/">GitHub</a>: ad oggi la piattaforma più utilizzata, che facilita molto la possibilità di terzi di inviare modifiche e correzioni al codice. Gratuito per i progetti opensource, a pagamento per progetti chiusi;
+	</li>
+	<li class="clearfix">
+		<img src="gitlab.png" alt="Logo GitLab" class="float-right" style="width: 50px"><a rel="nofollow" href="https://gitlab.com/">GitLab</a>: simile a GitHub, ma a sua volta sviluppato come progetto opensource. È possibile utilizzare gratuitamente il servizio online, o, se si ha tempo e capacità, installarne una istanza su un proprio server (e condividerla con altri).
+	</li>
+</ul>
+<p>Tutte queste piattaforma integrano una serie di strumenti estremamente utili, se non indispensabili, per agevolare lo sviluppo collaborativo ed abbassare il più possibile la soglia di accesso per aspiranti nuovi collaboratori. Più la soglia è bassa, più sarà facile il reclutamente spontaneo.</p>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-6">
+		<h3>Il bug tracker (o issue tracker)</h3>
+		<p>Laddove una mailing list o un forum sono canali comodi per fornire assistenza agli utenti del proprio software, la disponibilità di un bug tracker garantisce una assai più agevole e conveniente gestione delle segnalazioni. Utilizzando uno strumento ad-hoc si può tenere individuale traccia di ogni problema riscontrato, ma anche delle richieste di feature e delle funzionalità che si vogliono integrare in versioni future. Rendere pubbliche e facilmente consultabili tali informazioni non solo permette agli utenti di sapere come e quando un certo problema è stato risolto (o eventualmente di sollecitare una risoluzione, sintomo del fatto che il problema tocca più persone e forse merita una priorità più alta), ma facilita i nuovi potenziali collaboratori a capire rapidamente “cosa c’è da fare” e magari prendersi carico di un compito; in questo modo si possono intercettare occasionali contributi, magari modesti e mirati ma comunque benefici per la manutenzione e la stabilità del progetto a lungo termine.</p>
+		<p>Non temere di ricevere segnalazioni di errori e di lasciare che siano pubbliche sul bug tracker: un progetto che non riceve segnalazioni è un progetto che non usa nessuno e dunque poco appetibile. Il punto non è far sapere agli altri che esistono problemi (quale software non ne ha?), ma come questi problemi vengono gestiti. Anzi: incoraggiare a segnalare i problemi aiuta a farli emergere e a correggerli prima che vadano a discapito di qualcun altro.</p>
+	</div>
+	<div class="col-md-6">
+		<h3>Il repository</h3>
+		<p>Pubblicare occasionalmente un archivio compresso con l’ultima versione aggiornata dell’applicazione è certo consigliabile, ma ancor più consigliabile è tenere il tutto su un repository, su cui risiede il codice “vivo” in fase di sviluppo, aggiornato ad ogni singola modifica effettuata. Il sistema più utilizzato oggi è GIT (integrato nelle tre piattaforme di cui sopra), consigliato per via di una serie di facilitazioni rispetto al suo predecessore (il sistema SVN).</p>
+		<p>Storicizzare ed esporre pubblicamente non solo le versione stabili ma anche ogni modifica che avviene tra una versione e l’altra è estremamente utile per una serie di fattori: permette di risalire facilmente a quando e come è stata apportata una modifica (la quale magari ha introdotto un bug), rappresenta una implicita copia di backup del proprio codice, permette a chi è esterno al progetto di vedere quanto frequentemente il codice viene effettivamente aggiornato (anche se tra una versione e l’altra passa un anno), e più di ogni altra cosa facilita l’inclusione di modifiche fatte da terzi evitando o comunque limitando il rischio di “conflitti” tra modifiche diverse fatte da persone diverse in tempi diversi (con tutti i grattacapi che ne derivano).</p>
+		<p>Abituati ad usare un repository anche se – almeno per ora! – sei da solo a lavorare sul progetto: per i motivi di cui sopra tenere sempre aggiornato il proprio repository comunica il fatto che il codice è vivo e mantenuto, anche se è passato qualche tempo dall’ultima versione stabile. Su Internet si trovano facilmente guide e tutorial per GIT, anche in italiano.</p>
+	</div>
+</div>
+
+<hr>
+
+<p>Utilizzare in parallelo un bug tracker ed un repository permette di tenere sempre aggiornati tutti – in primis coloro che si imbattono nel progetto per caso e lo reputano interessante e meritevole di supporto – in merito ai progressi fatti, e rende molto più immediato ad altri il poter contribuire con una patch.</p>
+
+<h2>Licenza</h2>
+
+<p>La licenza è a tutti gli effetti un contratto col quale l'autore del software dichiara cosa gli utenti possono o non possono fare. Non pensare che il software rilasciato con una licenza libera sia completamente fuori controllo: ciascuno deve rispettare delle regole, e se non lo fa è assolutamente lecito fargli mandare una lettera da un avvocato e procedere per vie legali per mancato ossequio del suddetto contratto.</p>
+<p>Ci sono numerose licenze tra cui scegliere, ciascuna con un diverso grado di libertà concessa all'utente e con diversi requisiti, e alcune di queste non sono compatibili tra di loro. Per maggiori informazioni su come scegliere una licenza, sulle differenze che esistono tra quelle più note e popolari, e su come applicarle per essere tutelati da eventuali abusi, <a href="../licenze">consulta questa pagina</a>.</p>
+
+<h2>Consigli Vari</h2>
+
+<p>Ogni progetto che si rispetti ha un nome ed un logo. Non sottovalutare questi elementi, sono molto importanti per comunicare il tuo progetto. Su <a rel="nofollow" href="https://openclipart.org/">OpenClipArt</a> trovi tanti begli elementi in grafica vettoriale, rilasciati in pubblico dominio, da usare per elaborare un tuo logo.</p>
+<p>Dato un nome ed un logo è anche facile provvedere ad un sito web che spieghi in poche parole a cosa serve, dove di scarica, come si usa, ed i link agli strumenti di collaborazione di cui sopra. Non è difficile trovare su Internet templates HTML già pronti da personalizzare e pubblicare su uno spazio web.</p>

@@ -1,0 +1,165 @@
+localsections:
+  - label: "Milano"
+    city: "milano"
+    coords: "45.51847, 9.21308"
+
+  - label: "Torino"
+    city: "torino"
+    coords: "45.05407, 7.67826"
+
+  - label: "Firenze"
+    city: "firenze"
+    coords: "43.76987, 11.25463"
+
+  - label: "Bari"
+    city: "bari"
+    coords: "41.12550, 16.86711"
+
+  - label: "Verona"
+    city: "verona"
+    coords: "45.43074, 10.99950"
+
+  - label: "Perugia"
+    city: "perugia"
+    coords: "43.11212, 12.38881"
+
+  - label: "Alessandria"
+    city: "alessandria"
+    coords: "44.91289, 8.61535"
+
+  - label: "Rieti"
+    city: "rieti"
+    coords: "42.40211, 12.85992"
+
+  - label: "Novate Milanese"
+    city: "novatemilanese"
+    coords: "45.53096, 9.13474"
+
+  - label: "San Donà di Piave"
+    city: "sandonadipiave"
+    coords: "45.62948, 12.56317"
+
+associations:
+  - label: "BiLUG"
+    coords: "45.56641, 8.05334"
+    url: "http://bilug.it/"
+    image: "/images/associazioni/bilug.png"
+
+  - label: "bit01"
+    coords: "38.10354, 15.63882"
+    url: "https://www.associazionebit01.it/"
+    image: "/images/associazioni/bit01.png"
+
+  - label: "Edizioni Blue Lighthouse"
+    coords: "41.10461, 16.87150"
+    url: "https://blue-lighthouse.org/"
+    image: "/images/associazioni/bluelighthouse.png"
+
+  - label: "GOLEM"
+    coords: "43.71949, 10.94491"
+    url: "https://golem.linux.it/"
+    image: "/images/associazioni/golem.png"
+
+  - label: "HackLabCormano"
+    coords: "45.54719, 9.16632"
+    url: "https://hacklabcormano.it/"
+    image: "/images/associazioni/hacklab-cormano.png"
+
+  - label: "LugAnegA"
+    coords: "46.13813, 12.21660"
+    url: "https://www.luganega.org/"
+    image: "/images/associazioni/luganega.png"
+
+  - label: "LugMAN"
+    coords: "45.15667, 10.79078"
+    url: "https://lugman.org/"
+    image: "/images/associazioni/lugman.png"
+
+  - label: "Lug Vicenza"
+    coords: "45.54883, 11.54694"
+    url: "https://lugvi.it/"
+    image: "/images/associazioni/lugvicenza.png"
+
+  - label: "PNLUG"
+    coords: "45.95625, 12.65878"
+    url: "https://www.pnlug.it/"
+    image: "/images/associazioni/pnlug.png"
+
+  - label: "Soluzioni Inform-Etiche"
+    coords: "45.07371, 7.67226"
+    url: "https://www.sie.cloud/"
+    image: "/images/associazioni/sie.png"
+
+  - label: "Sputnix"
+    coords: "38.10326, 13.34714"
+    url: "https://www.sputnix.it/"
+    image: "/images/associazioni/sputnix.png"
+
+  - label: "The Free Circle"
+    coords: "38.11123, 13.35151"
+    url: "https://www.thefreecircle.org/"
+    image: "/images/associazioni/freecircle.png"
+
+  - label: "VimeLUG"
+    coords: "45.61396, 9.37005"
+    url: "https://www.vimelug.org/"
+    image: "/images/associazioni/vimelug.png"
+
+  - label: "Il faro d'argento APS"
+    coords: "41.7412624, 12.3604027"
+    url: "https://www.webradiofaro.it/"
+    image: "/images/associazioni/ilfarodargentoaps.png"
+
+sponsors:
+  - label: "Appleby srl"
+    url: "http://www.applebyitalia.it/"
+    image: "/images/sponsor/appleby.png"
+
+  - label: "Bosh Rexroth"
+    url: "https://www.boschrexroth.com/"
+    image: "/images/sponsor/bosh_rexroth.png"
+
+  - label: "Continuity srl"
+    url: "https://continuity.space/"
+    image: "/images/sponsor/continuity.png"
+
+  - label: "Emberware srls"
+    url: "https://emberware.it/"
+    image: "/images/sponsor/emberware.png"
+
+  - label: "Ergonet"
+    url: "https://www.ergonet.it/"
+    image: "/images/sponsor/ergonet.png"
+
+  - label: "Extraordy"
+    url: "https://www.extraordy.com/"
+    image: "/images/sponsor/extraordy.png"
+
+  - label: "Linux Professional Institute"
+    url: "https://www.lpi.org/it/"
+    image: "/images/sponsor/lpi.png"
+
+  - label: "Software Workers srl"
+    url: "https://softwareworkers.it/"
+    image: "/images/sponsor/softwareworkers.png"
+
+partners:
+  - label: "Linux Foundation"
+    reference: "/2022/06/30/linux-foundation.html"
+    image: "/images/partner/lf.png"
+
+  - label: "Linux Professional Institute"
+    reference: "/2021/03/19/lpi-community-partner.html"
+    image: "/images/partner/lpi.png"
+
+  - label: "Wikimedia Italia"
+    reference: "/2020/09/14/protocollo-con-wikimedia-italia.html"
+    image: "/images/partner/wikimedia.png"
+
+  - label: "Informatici Senza Frontiere"
+    reference: "/2021/02/02/protocollo-con-informatici-senza-frontiere.html"
+    image: "/images/partner/isf.png"
+
+  - label: "Fondazione Edulife"
+    reference: "/2022/11/24/protocollo-fondazione-edulife.html"
+    image: "/images/partner/edulife.png"
