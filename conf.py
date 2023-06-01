@@ -17,7 +17,7 @@ import yaml
 
 
 # Data about this site
-BLOG_AUTHOR = {"name": "Italian Linux Society", "twitter": "ItaLinuxSociety"}  # (translatable)
+BLOG_AUTHOR = {"name": "Linux.it", "twitter": "ItaLinuxSociety"}  # (translatable)
 BLOG_TITLE = "Linux.it"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
@@ -26,7 +26,7 @@ SITE_URL = "https://www.linux.it/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://www.ils.org"
 BLOG_EMAIL = "webmaster@linux.it"
-BLOG_DESCRIPTION = "Dal 1994, Linux in Italia"  # (translatable)
+BLOG_DESCRIPTION = "Linux: Cos'è, Chi è, Perché"  # (translatable)
 
 # What is the default language?
 DEFAULT_LANG = "it"
@@ -78,9 +78,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
-        ("/info", "L'Associazione"),
-        ("/progetti", "Progetti e attività"),
-        ("https://ilsmanager.linux.it/ng/register", "Iscrizione"),
+        ("/linux", " Cos'è Linux"),
+        ("/softwarelibero", "Il Software Libero"),
+        ("/community", "La Community"),
         ("/contatti", "Contatti"),
     ),
 }
