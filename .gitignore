@@ -11,3 +11,4 @@ __pycache__
 output
 # IntellyJ IDEA Community Edition
 /.idea
+.doit.db
