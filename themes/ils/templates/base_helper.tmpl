@@ -22,10 +22,13 @@ lang="{{ lang }}">
     <meta name="description" content="{{ description|e }}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if title == blog_title or title == '' %}
+    {% if title == blog_title %}
         <title>{{ blog_title|e }}</title>
+    {% elif title == '' %}
+        <title>Home | {{ blog_title|e }}</title>
     {% else %}
         <title>{{ title|e }} | {{ blog_title|e }}</title>
+        <meta property="og:title" content="{{ title|e }}" />
     {% endif %}
 
     {{ html_stylesheets() }}
@@ -53,11 +56,7 @@ lang="{{ lang }}">
         <link rel="next" href="{{ nextlink }}" type="text/html">
     {% endif %}
 
-    {% if use_cdn %}
-        <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    {% else %}
-        <!--[if lt IE 9]><script src="{{ url_replacer(permalink, '/assets/js/html5.js', lang, url_type) }}"></script><![endif]-->
-    {% endif %}
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" sizes="any">
 
     {{ extra_head_data }}
 {% endmacro %}

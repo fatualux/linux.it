@@ -124,7 +124,7 @@ THEME_CONFIG = {
         'sidebar': '',
         'google_verification': 'H_dcIh0saGTiFmZdJG5aXqF5a2Fgr4bwI_3sVbRU9ek',
         'matomo_id': 1,
-        'social': 
+        'social':
             (
                 ['ILS su Twitter', 'https://twitter.com/ItaLinuxSociety', 'https://www.linux.it/shared/?f=immagini/twitter.svg'],
                 ['ILS su Facebook', 'https://www.facebook.com/ItaLinuxSociety/', 'https://www.linux.it/shared/?f=immagini/facebook.svg'],
@@ -136,7 +136,7 @@ THEME_CONFIG = {
         'associations': _conf['associations'],
         'localsections': _conf['localsections'],
         'sponsors': _conf['sponsors'],
-        'partners': _conf['partners'],
+        'partners': _conf['partners']
     }
 }
             
