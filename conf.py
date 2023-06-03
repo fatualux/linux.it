@@ -131,7 +131,6 @@ THEME_CONFIG = {
                 ['ILS su Instagram', 'https://www.instagram.com/ItaLinuxSociety', 'https://www.linux.it/shared/?f=immagini/instagram.svg'],
                 ['ILS su Mastodon', 'https://mastodon.uno/@ItaLinuxSociety/', 'https://www.linux.it/shared/?f=immagini/mastodon.svg'],
                 ['ILS su Gitlab', 'https://gitlab.com/ItalianLinuxSociety', 'https://www.linux.it/shared/?f=immagini/gitlab.svg'],
-                ['Feed RSS', '/feed.xml', 'https://www.linux.it/shared/?f=immagini/rss.svg']
             ),
         'associations': _conf['associations'],
         'localsections': _conf['localsections'],
