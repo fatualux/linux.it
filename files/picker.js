@@ -44,55 +44,55 @@ jQuery(document).ready(function($) {
     		{
     			"name": "Mint",
     			"website": "http://www.linuxmint.com/",
-    			"logo": "/assets/images/distro_mint.png",
+    			"logo": "/images/distro_mint.png",
     			"answers": [0, 0, 0, 0]
     		},
     		{
     			"name": "Elementary",
     			"website": "https://elementary.io/",
-    			"logo": "/assets/images/distro_elementary.png",
+    			"logo": "/images/distro_elementary.png",
     			"answers": [0, 0, 0, 1]
     		},
     		{
     			"name": "Lubuntu",
     			"website": "http://lubuntu.net/",
-    			"logo": "/assets/images/distro_lubuntu.png",
+    			"logo": "/images/distro_lubuntu.png",
     			"answers": [0, 0, 0, 2]
     		},
     		{
     			"name": "Ubuntu",
     			"website": "http://www.ubuntu-it.org/",
-    			"logo": "/assets/images/distro_ubuntu.png",
+    			"logo": "/images/distro_ubuntu.png",
     			"answers": [0, 1, 0, 0]
     		},
     		{
     			"name": "Fedora",
     			"website": "https://getfedora.org/it/",
-    			"logo": "/assets/images/distro_fedora.png",
+    			"logo": "/images/distro_fedora.png",
     			"answers": [0, 1, 1, 0]
     		},
     		{
     			"name": "Mageia",
     			"website": "http://www.mageia.org/it/",
-    			"logo": "/assets/images/distro_mageia.png",
+    			"logo": "/images/distro_mageia.png",
     			"answers": [1, 1, 0, 0]
     		},
     		{
     			"name": "openSUSE",
     			"website": "https://it.opensuse.org/",
-    			"logo": "/assets/images/distro_opensuse.png",
+    			"logo": "/images/distro_opensuse.png",
     			"answers": [1, 2, 1, 0]
     		},
     		{
     			"name": "Debian",
     			"website": "https://www.debian.org/index.it.html",
-    			"logo": "/assets/images/distro_debian.png",
+    			"logo": "/images/distro_debian.png",
     			"answers": [2, 2, 2, 1]
     		},
     		{
     			"name": "Arch",
     			"website": "http://www.archlinux.it/",
-    			"logo": "/assets/images/distro_arch.png",
+    			"logo": "/images/distro_arch.png",
     			"answers": [2, 2, 1, 0]
     		}
     	]
