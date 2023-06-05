@@ -62,10 +62,14 @@ lang="{{ lang }}">
 {% endmacro %}
 
 {% macro late_load_js() %}
-    <script type="text/javascript" src="https://www.linux.it/shared/index.php?f=jquery.js" defer></script>
+    <script type="text/javascript" src="https://www.linux.it/shared/index.php?f=jquery.js"></script>
     <script type="text/javascript" src="https://www.linux.it/shared/index.php?f=bootstrap.js" defer></script>
     {% if permalink == '/info/' %}
         <script type="text/javascript" src="/info.js" defer></script>
+    {% endif %}
+    {% if permalink == '/distro/' %}
+        <script type="text/javascript" src="/picker.js" defer></script>
+        <link rel="stylesheet" href="/picker.css">
     {% endif %}
 {% endmacro %}
 
