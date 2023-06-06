@@ -4,15 +4,10 @@ Questo è il repository del sito https://www.linux.it generato con [Nikola](http
 
 ## Requisiti di sviluppo
 
-- avere un sistema operativo Unix-like qualsiasi
+- avere un sistema operativo Unix-like
 - python installato e qualche comando
 
-## Dipendenze
-
-- `apt install sass # sulla macchina`
-
-```
-pip install Nikola[extras] pyaml
+python -m pip install Nikola[extras]
 nikola plugin -i sass # viene scaricato dentro il repository
 ```
 
@@ -29,19 +24,13 @@ Grazie per ogni contributo!
 
 ## Creare una build statica
 
-Per creare una singola build statica, eseguire questo comandi dalla cartella `ils.org`:
+Per creare una singola build statica, eseguire questo comandi dalla cartella `linux-it`:
 
 ```
 nikola build
 ```
 
-## Segnalazioni
-
-Per segnalazioni e richieste, apri una segnalazione:
-
-https://gitlab.com/ItalianLinuxSociety/ils.org/-/issues/new
-
-Oppure scrivi a:
+Per segnalazioni e richieste, apri una segnalazione scrivi a:
 
 webmaster@linux.it
 
