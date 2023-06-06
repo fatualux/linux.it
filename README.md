@@ -7,7 +7,7 @@ Questo è il repository del sito https://www.linux.it generato con [Nikola](http
 - avere un sistema operativo Unix-like
 - python installato e qualche comando
 
-...
+```
 python -m pip install Nikola[extras]
 nikola plugin -i sass # viene scaricato dentro il repository
 ```
